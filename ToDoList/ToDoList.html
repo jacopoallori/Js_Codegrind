@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToDo List</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex flex-col items-center justify-center  bg-gradient-to-r from-purple-400 to-blue-500">
+    <h1 class="text-4xl text-white p-8 font-bold">TODO List</h1>
+    <input id="new-task" type="text" placeholder="Cosa devi fare?" class="rounded text-center mb-2" />
+    <button id="new-task-btn" class="my-2 bg-white text-black py-2 px-4 border border-black rounded">Aggiungi Task</button>
+    <button id="clear-btn" class="my-2 bg-white text-black py-2 px-4 border border-black rounded">Pulisci</button>
+    
+    <div id="todo" class="text-center text-white"></div>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

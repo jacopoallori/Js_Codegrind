@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autocompletamento</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="h-screen bg-gradient-to-r from-purple-400 to-blue-500">
+        <h1 class="text-4xl text-white mb-8 font-bold text-center pt-8">Generazione dati</h1>
+        <h5 class="text-white text-center pb-8">Inserisci il nome della persona di cui desideri Visualizzare i dati</h5>
+        <section class="text-center">
+        <input
+            type="text"
+            class="border-2 p-2 text-center"
+            placeholder="Chi stai cercando?"
+            id="ricerca" />
+            <div id="risultati" class="border-2 m-2 p-2"></div>
+            <h5 class="text-white text-center p-5">Risultato:</h5>
+            <ul id="lista" class="text-white text-center">
+
+            </ul>
+        </section>
+    </div>
+    <script src="function.js" type="module"></script>
+  </body>
+</html>
