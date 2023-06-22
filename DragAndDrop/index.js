@@ -1,4 +1,4 @@
-import { placeholderData } from "./data.js";
+import { data } from "./data.js";
 import { dragStart, dragEnd, dragOver, dragEnter, dragLeave, dragDrop, generateTasks } from "./function.js";
 
 generateTasks();
@@ -26,26 +26,17 @@ form.addEventListener('submit', function(e){
     e.preventDefault();
   
     const nameInput = document.getElementById('input');
-    const inputValue = nameInput.value;
-    let idValid =0 ;
       
     if(nameInput.value != null){
-        placeholderData.forEach(function(dato) {
-            if(dato.tasks.length != 0)
-            { 
-                let idDato = dato.tasks.pop().id;
-                console.log(idDato);
-                if(idValid < idDato){
-                    idValid = idDato;
-                }
-            }
-            console.log("Nuovo ID:" + idValid);
-          });
-        console.log('Submitted Name:', inputValue);
-        data[0].tasks.push({id:idValid +1 ,name:inputValue});
+        let local = JSON.parse(localStorage.getItem("data"));
+        local[0].tasks.push({id:10, name:nameInput.value});
+        localStorage.setItem("data",JSON.stringify(local));
+
         nameInput.value = "";
+        generateTasks();
     }
-    console.log(data[0].tasks);
+
+    console.log(localStorage.getItem("data"));
 
 }
 )

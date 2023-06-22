@@ -1,4 +1,4 @@
-export const placeholderData = [
+export let placeholderData = [
     {
       id: 0,
       name: "In Coda",

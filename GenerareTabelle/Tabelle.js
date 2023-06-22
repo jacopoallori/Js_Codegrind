@@ -9,11 +9,15 @@ export class Tabella {
     }
   
     generaTabella() {
+      const divMain = document.getElementById("divMain");
+      divMain.style.display="flex";
+      divMain.style.justifyItems="center";
+      divMain.style.flexDirection="column";
       const tabella = document.createElement("table");
-      tabella.setAttribute("class", "text-center");
+      tabella.style.margin="20px";
       tabella.appendChild(this.generaColonne());
       tabella.appendChild(this.generaRighe());
-      document.querySelector("body").appendChild(tabella);
+      divMain.appendChild(tabella);
     }
   
     generaColonne() {

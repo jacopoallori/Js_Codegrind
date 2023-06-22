@@ -50,14 +50,18 @@ export function generateTasks() {
         const targetColumn = document.querySelector(
         `[data-column='${colonna.id}']`
         );
+        console.log(targetColumn.innerHTML);
+        //targetColumn.removeChild(div);
         colonna.tasks.forEach((task) => {
-        const element = document.createElement("div");
-        element.className = "task p-4 rounded-xl shadow-xl bg-white";
-        element.setAttribute("draggable", true);
-        element.setAttribute("data-task", task.id);
-        const text = document.createTextNode(task.name);
-        element.appendChild(text);
-        targetColumn.appendChild(element);
+            //console.log(task);
+            const element = document.createElement("div");
+            //console.log(element.innerHTML);
+            element.className = "task p-4 rounded-xl shadow-xl bg-white";
+            element.setAttribute("draggable", true);
+            element.setAttribute("data-task", task.id);
+            const text = document.createTextNode(task.name);
+            element.appendChild(text);
+            targetColumn.appendChild(element);
         });
     });
 }
