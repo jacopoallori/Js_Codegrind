@@ -6,23 +6,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Modifica Card Interattiva</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
-    <div class="flex">
-      <div class="border-2 flex w-1/2 h-96">
-        <div class="color-picker bg-red-500 w-1/4"></div>
-        <div class="color-picker bg-orange-500 w-1/4"></div>
-        <div class="color-picker bg-yellow-500 w-1/4"></div>
-        <div class="color-picker bg-pink-500 w-1/4"></div>
+  <body class="bg-gradient-to-r from-purple-400 to-blue-500 text-center">
+    <h1 class="text-4xl text-white mb-8 font-bold mt-8">Modifica interattiva di una Card</h1>
+
+    <section>
+      <div class="my-2">
+        <label for="image">Immagini URL</label>
+        <input type="text" id="image" class="border-2 border-black"/>
       </div>
 
-      <div
-        id="preview"
-        class="border-2 flex w-1/2 h-96 justify-center items-center">
-        <h1>preview</h1>
+      <div class="my-2">
+        <label for="title-color">Colore Titolo</label>
+        <input type="color" id="title-color" class="border-2 border-black"/>
+      </div>
+
+      <div class="my-2">
+        <label for="paragraph-color">Colore Testo</label>
+        <input type="color" id="paragraph-color" class="border-2 border-black"/>
+      </div>
+
+      <div class="my-2">
+        <label for="padding-x">Padding Orizzontale</label>
+        <input type="number" id="padding-x" class="border-2 border-black"/>
+      </div>
+
+      <div class="my-2">
+        <label for="padding-y">Padding Verticale</label>
+        <input type="number" id="padding-y" class="border-2 border-black"/>
+      </div>
+
+      <div class="my-2">
+        <label for="border-radius">Bordi Arrotondati </label>
+        <input type="number" id="border-radius" class="border-2 border-black"/>
+      </div>
+    </section>
+
+    <div id="card" class="border-2 border-black">
+      <img src="" alt="immagine" id="img" />
+      <div>
+        <h2>Titolo della card</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, neque
+          eaque. Distinctio voluptas dignissimos dolore ipsum voluptatem
+          inventore voluptate odio ipsa suscipit. Cum ducimus error facilis
+          reprehenderit pariatur, odio amet.
+        </p>
       </div>
     </div>
 
-    <script src="function.js" type="module"></script>
+    <script src="index.js"></script>
   </body>
 </html>
