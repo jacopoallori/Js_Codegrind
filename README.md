@@ -1,6 +1,6 @@
 <h1 align="center">Progetti Esercizi CodeGrind</h1>
 
-<img src="https://github.com/jacopoallori/Memory-Game/blob/master/MemoryGame.png" alt="HomePage Progetto CodeGrind">
+<img src="https://github.com/jacopoallori/Js_Codegrind/blob/master/HomePageProgettoCodeGrind.png" alt="HomePage Progetto CodeGrind">
 <div align="center">
 <h3>Languages and Tools:</h3>
 <p>
