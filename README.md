@@ -1,4 +1,4 @@
-<h1 align="center">Progetti Esercizi CodeGrind</h1>
+<h1 align="center">Progetto Esercizi CodeGrind</h1>
 
 <img src="https://github.com/jacopoallori/Js_Codegrind/blob/master/HomePageProgettoCodeGrind.png" alt="HomePage Progetto CodeGrind">
 <div align="center">
